@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Shop - President Cart</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">🛍️ Mini Shop</div>
+        <div class="cart-badge">
+            Cart: <span id="CartCount">0</span>
+        </div>
+    </header>    
+
+    <main class="container">
+        <section class="controls">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+                autocomplete="off"
+                />
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" data-category="All">All</button>
+                <button class="filter-btn" data-category="Electronics">Electronics</button>
+                <button class="filter-btn" data-category="Fashion">Fashion</button>
+                <button class="filter-btn" data-category="Books">Books</button>
+            </div>
+        </section>
+
+        <section class="cart-summary">
+            <div class="total-price">
+                Total: <strong id="cartTotal">₫</strong>
+            </div>
+            <button id="clearCartBtn" class="clear-btn">Clear cart</button>
+        </section>
+
+        <section class="product-grid" id="productGrid"></section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
